@@ -9,13 +9,72 @@ form {
 }
 
 section {
-    border: 1px solid #76a7e1;
+    /*border: 1px solid #76a7e1;*/
 }
 
-.file-upload {
+.header-section {
+    height: 200px;
+}
+
+.top-submit-section {
+    width: 60%;
+    display: inline-block;
+}
+
+.top-info {
+    width: 30%;
+    display: inline-block;
+}
+
+address {
+    font-style: normal;
+    font-weight: 600;
+}
+
+#adress-right {
+    float: right;
+
+}
+
+#adress-left{
+    float: left;
+}
+
+
+
+.header-section button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #d7d9e0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.header-section table {
+    float: left;
+}
+
+.upload-file-section h2 {
+    display: inline;
+}
+
+.upload-file-section table {
+    border: 1px solid #d7d9e0;
+    width: 100%;
+}
+
+.file-upload-btn {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 1px solid #d7d9e0;
     background: #f7f7fa;
     border-radius: 3px;
+}
+
+.delete-btn {
+    background-color:transparent;
+    border:none;
 }
 
 .language select {
@@ -33,6 +92,35 @@ section {
     background: #f7f7fa;
     border: 1px solid #d7d9e0;
     color: #6e768f;
+}
+
+.desired-urgent section {
+    width: 45%;
+    display: inline-block;
+}
+
+.urgent p {
+    display: inline-block;
+}
+
+.urgent input {
+    display: block;
+    width: 100%;
+}
+
+#left-range {
+    float: left;
+    width: 100px;
+}
+
+#right-range {
+    float: right;
+    width: 100px;
+}
+
+#center-range {
+    margin: 0 auto;
+    width: 100px;
 }
 
 .what-you-want {
@@ -92,8 +180,8 @@ section {
     /* IMAGE STYLES */
     cursor: pointer;
     border: 2px solid transparent;
-    width: 20%;
-    height: 20%;
+    width: 50%;
+    height: 50%;
 }
 
 .select-desire > input:checked + img {
@@ -101,8 +189,8 @@ section {
     border: 5px solid #5472ff;
 }
 
-.urgent {
-
+.desired-urgent .timeline-info {
+    width: 100%;
 }
 
 /*Styles for input[type=range]*/
@@ -136,12 +224,15 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     background: #ccc;
 }
 
-
-.submit-section{
-float: right;
+.payment label > input {
+    display: block;
 }
 
-.submit-section button {
+.bottom-submit-section {
+    float: right;
+}
+
+.bottom-submit-section button {
     width: 150px;
     height: 50px;
     border: 1px solid #d7d9e0;
@@ -149,9 +240,11 @@ float: right;
     font-size: 14px;
 }
 
-#submit-button {
+.submit-btn {
     background: #5fcac6;
     border: 1px solid #54aca9;
     color: white;
 }
+
+
 
