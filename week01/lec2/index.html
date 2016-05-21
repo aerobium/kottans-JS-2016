@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+<!--------------------------------------------------------------------------------------------------------------->
+
+
+<form>
+
+
+    <section class="what-you-want">
+        <h1>select what you want to translate</h1>
+        <hr>
+        <label class="select-translate">
+            <input type="radio" name="variant" value="web"/>
+            <img src="img/website.png">
+        </label>
+        <label class="select-translate">
+            <input type="radio" name="variant" value="doc"/>
+            <img src="img/documents.png">
+        </label>
+        <label class="select-translate">
+            <input type="radio" name="variant" value="soc"/>
+            <img src="img/social-accounts.png">
+        </label>
+    </section>
+
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <h2>Upload your documents</h2>
+    <span>Doc, Docx, Text, PDF, Markdown</span>
+
+    <label class="file-upload">
+       Upload new file
+        <input type="file" hidden>
+    </label>
+
+
+    <section>
+        <table>
+            <tr>
+                <th>file name</th>
+                <th>file size</th>
+                <th>number of words</th>
+                <th>remove</th>
+            </tr>
+            <tr>
+                <td>business_operations.docx</td>
+                <td>72 KB</td>
+                <td>842</td>
+                <td>тут будет иконка Удалить</td>
+            </tr>
+            <tr>
+                <td>business_financial.docx</td>
+                <td>26 KB</td>
+                <td>2,326</td>
+                <td>тут будет иконка Удалить</td>
+            </tr>
+        </table>
+    </section>
+    </section>
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <section class="language">
+        <h2>Choose your language pairings</h2>
+
+        <label>
+            FROM
+            <select>
+                <option>English</option>
+                <option>Ukrainian</option>
+                <option>French</option>
+            </select>
+        </label>
+        <br>
+        <label>
+            TO
+            <select>
+                <option>English</option>
+                <option>Ukrainian</option>
+                <option>French</option>
+            </select>
+            <select>
+                <option>English</option>
+                <option>Ukrainian</option>
+                <option>French</option>
+            </select>
+            <button>+ ADD</button>
+        </label>
+
+
+    </section>
+
+
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <section>
+        <h2>Select your desire tone</h2>
+
+        <label class="select-desire">
+            <input type="radio" name="desire" value="friend"/>
+            <img src="img/desire-1.png">
+        </label>
+        <label class="select-desire">
+            <input type="radio" name="desire" value="corporate"/>
+            <img src="img/desire-1.png">
+        </label>
+        <label class="select-desire">
+            <input type="radio" name="desire" value="media"/>
+            <img src="img/desire-3.png">
+        </label>
+    </section>
+
+
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <section class="urgent">
+        <h2>Tell us how urgent this job is</h2>
+        <input type="range" step="25" min="0" max="50">
+
+        <section class="timeline-info">
+            <h3>timeline info</h3>
+
+            <p>With an Avarage timeline set up, our expert translator can take a reasonable amount of time perfecting
+                your translation.</p>
+        </section>
+    </section>
+
+
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <section>
+        <h2>Sign up an choose a payment methods</h2>
+
+        <span>Already have an account with us?</span> <a href="#">Sign in</a>
+
+
+        <label>
+            <input type="text">
+        </label>
+
+
+        <section>
+            <label class="select-payment">
+                <input type="radio" name="payment" value="visa"/>
+                <img src="img/payment-1.png">
+            </label>
+            <label class="select-payment">
+                <input type="radio" name="payment" value="paypal"/>
+                <img src="img/payment-2.png">
+            </label>
+            <label class="select-payment">
+                <input type="radio" name="payment" value="amazon"/>
+                <img src="img/payment-3.png">
+            </label>
+        </section>
+    </section>
+
+
+
+
+
+
+
+    <section class="submit-section">
+        <label>
+            <input type="checkbox">
+            <span>I agree to the </span><a href="#">Terms & conditions</a>
+        </label>
+        <button type="submit" id="submit-button">place order</button>
+        <button>print a quote</button>
+    </section>
+
+</form>
+
+
+</body>
+</html>
