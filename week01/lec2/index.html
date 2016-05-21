@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Order form</title>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet">
@@ -19,7 +19,7 @@
 
     <section class="header-section">
         <section class="top-submit-section">
-            <p><i class="fa fa-file" aria-hidden="true"></i> YOUR ORDER</p>
+            <h3><i class="fa fa-file" aria-hidden="true"></i> YOUR ORDER</h3>
 
             <table>
                 <tr>
@@ -38,11 +38,11 @@
 
 
             <button type="submit" class="submit-btn">place order</button>
-            <button>print a quote</button>
+            <button onclick="window.print()">print a quote</button>
         </section>
 
         <section class="top-info">
-            <p><i class="fa fa-life-ring" aria-hidden="true"></i> HELP CENTER</p>
+            <h3><i class="fa fa-life-ring" aria-hidden="true"></i> HELP CENTER</h3>
 
             <p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or
                 email.</p>
@@ -50,6 +50,7 @@
             <address id="adress-right">help@quest.com</address>
         </section>
 
+        <hr>
     </section>
 
 
@@ -72,6 +73,8 @@
 
     <!--------------------------------------------------------------------------------------------------------------->
     <section class="upload-file-section">
+        <span>1 </span>
+
         <h2>Upload your documents</h2>
         <small>(Doc, Docx, Text, PDF, Markdown)</small>
 
@@ -79,7 +82,7 @@
 
 
         <label class="file-upload-btn">
-            Upload new file
+            <i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload new file
 
 
             <input type="file" hidden>
@@ -94,7 +97,7 @@
                 <th>remove</th>
             </tr>
             <tr>
-                <td>business_operations.docx</td>
+                <td><i class="fa fa-file-text" aria-hidden="true"></i> business_operations.docx</td>
                 <td>72 KB</td>
                 <td>842</td>
                 <td>
@@ -102,7 +105,7 @@
                 </td>
             </tr>
             <tr>
-                <td>business_financial.docx</td>
+                <td><i class="fa fa-file-text" aria-hidden="true"></i> business_financial.docx</td>
                 <td>26 KB</td>
                 <td>2,326</td>
                 <td>
@@ -115,6 +118,8 @@
     <!--------------------------------------------------------------------------------------------------------------->
 
     <section class="language">
+        <span>2 </span>
+
         <h2>Choose your language pairings</h2>
 
         <label>
@@ -138,6 +143,7 @@
                 <option>Ukrainian</option>
                 <option>French</option>
             </select>
+            <i class="fa fa-trash" aria-hidden="true"></i>
             <button>+ ADD</button>
         </label>
 
@@ -149,6 +155,8 @@
         <!--------------------------------------------------------------------------------------------------------------->
 
         <section>
+            <span>3 </span>
+
             <h2>Select your desire tone</h2>
 
             <label class="select-desire">
@@ -169,19 +177,22 @@
         <!--------------------------------------------------------------------------------------------------------------->
 
         <section class="urgent">
+            <span>4 </span>
+
             <h2>Tell us how urgent this job is</h2>
             <input type="range" step="25" min="0" max="50">
 
             <p id="left-range">I GOT TIME</p>
 
-            <p id="center-range">AVERAGE</p>
+            <p id="center-range"><span class="vip">AVERAGE</span></p>
 
             <p id="right-range">YESTERDAY</p>
 
             <section class="timeline-info">
-                <h3>timeline info</h3>
+                <h3><i class="fa fa-info-circle" aria-hidden="true"></i> TIMELINE INFO</h3>
 
-                <p>With an Avarage timeline set up, our expert translator can take a reasonable amount of time
+                <p>With an <span class="vip">Avarage</span> timeline set up, our expert translator can take a reasonable
+                    amount of time
                     perfecting
                     your translation.</p>
             </section>
@@ -193,6 +204,8 @@
 
 
     <section class="payment">
+        <span>5 </span>
+
         <h2>Sign up an choose a payment methods</h2>
 
         <p>Already have an account with us? <a href="#">Sign in</a></p>
@@ -215,7 +228,7 @@
 
         <section>
             <label class="select-payment">
-                <input type="radio" name="payment" value="visa"/>
+                <input type="radio" name="payment" value="visa" required/>
                 <img src="img/payment-1.png">
             </label>
             <label class="select-payment">
@@ -231,17 +244,17 @@
 
         <label>
             CARD NUMBER
-            <input class="cc-num" type="text">
+            <input class="cc-num" name="cnum" type="text" required>
         </label>
 
         <label>
             EXPIRY DATE
-            <input class="cc-exp" type="text">
+            <input class="cc-exp" name="cdate" type="text" required>
         </label>
 
         <label>
             CODE
-            <input class="cc-cvc" type="text">
+            <input class="cc-cvc" name="ccvc" type="text" required>
         </label>
 
 
@@ -250,11 +263,11 @@
 
     <section class="bottom-submit-section">
         <label>
-            <input type="checkbox">
+            <input type="checkbox" required>
             <span>I agree to the </span><a href="#">Terms & conditions</a>
         </label>
         <button type="submit" class="submit-btn">place order</button>
-        <button>print a quote</button>
+        <button  onclick="window.print()">print a quote</button>
     </section>
 
 </form>

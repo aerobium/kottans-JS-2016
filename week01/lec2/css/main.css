@@ -1,15 +1,20 @@
 body {
     color: #6e768f;
-    font-family: 'Open Sans', serif
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
 }
 
 form {
-    width: 85%;
+    width: 75%;
     margin: 0 auto;
 }
 
 section {
     /*border: 1px solid #76a7e1;*/
+}
+
+h1 {
+    text-transform: uppercase;
 }
 
 .header-section {
@@ -22,8 +27,10 @@ section {
 }
 
 .top-info {
+    padding: 15px;
     width: 30%;
     display: inline-block;
+    border-left: 1px solid #6e768f;
 }
 
 address {
@@ -52,6 +59,7 @@ address {
 
 .header-section table {
     float: left;
+    margin-right: 50px;
 }
 
 .upload-file-section h2 {
@@ -63,6 +71,10 @@ address {
     width: 100%;
 }
 
+.upload-file-section table td {
+text-align: center;
+}
+
 .file-upload-btn {
     display: inline-block;
     margin-top: 20px;
@@ -70,6 +82,8 @@ address {
     border: 1px solid #d7d9e0;
     background: #f7f7fa;
     border-radius: 3px;
+    width: 150px;
+    height: 50px;
 }
 
 .delete-btn {
@@ -79,12 +93,14 @@ address {
 
 .language select {
     text-align: center;
+    text-align-last:center; /*work only with chrome*/
     background: #f7f7fa;
     width: 150px;
     height: 50px;
-    font-size: 14pt;
+    font-size: 14px;
     color: #6e768f;
     border: 1px solid #d7d9e0;
+    border-radius: 3px;
 }
 
 .language button {
@@ -145,7 +161,6 @@ address {
 }
 
 .select-translate > input:checked + img {
-    /* (RADIO CHECKED) IMAGE STYLES */
     border: 5px solid #76a7e1;
 }
 
@@ -155,15 +170,13 @@ address {
 }
 
 .select-payment > input + img {
-    /* IMAGE STYLES */
     cursor: pointer;
     border: 2px solid transparent;
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 20%;
 }
 
 .select-payment > input:checked + img {
-    /* (RADIO CHECKED) IMAGE STYLES */
     border: 5px solid #5472ff;
 }
 
@@ -191,6 +204,8 @@ address {
 
 .desired-urgent .timeline-info {
     width: 100%;
+    border: 1px solid #6e768f;
+    padding: 15px;
 }
 
 /*Styles for input[type=range]*/
@@ -226,6 +241,9 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 .payment label > input {
     display: block;
+    border:solid 1px #ccc;
+    border-radius: 3px;
+    height: 30px;
 }
 
 .bottom-submit-section {
@@ -236,6 +254,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     width: 150px;
     height: 50px;
     border: 1px solid #d7d9e0;
+    border-radius: 3px;
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -246,5 +265,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     color: white;
 }
 
+
+
+.vip {
+    color: #ffc500;
+    text-transform: uppercase;
+}
 
 
