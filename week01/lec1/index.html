@@ -6,7 +6,6 @@
 </head>
 <body>
 
-<!------------------------------------------------------->
 <aside>
     <ul>
         <li><a href="">TM Feed</a>
@@ -17,6 +16,7 @@
         <li><a href="">Фрилансим</a>
     </ul>
 
+
     <span>Спецпроекты</span>
     <ul>
         <li><a href="">Контент-маркетинг</a>
@@ -25,42 +25,41 @@
     </ul>
 </aside>
 
-
-<!------------------------------------------------------->
-
-
 <header>
     <aside>
-        <span>Разделы</span>
-        <input type="text" placeholder="Поиск">
-        <ul>
-            <li><a href="">Публикации</a></li>
-            <li><a href="">Хабы</a></li>
-            <li><a href="">Компании</a></li>
-            <li><a href="">Пользователи</a></li>
-        </ul>
-        <hr>
-        <span>Спецпроекты</span>
-        <ul>
-            <li><a href="">Соберите свой стартап</a></li>
-            <li><a href="">Linux в Azure</a></li>
-            <li><a href="">Создай игру</a></li>
-        </ul>
+        <section>
+            <h3>Разделы</h3>
+            <input type="text" placeholder="Поиск">
+            <ul>
+                <li><a href="">Публикации</a></li>
+                <li><a href="">Хабы</a></li>
+                <li><a href="">Компании</a></li>
+                <li><a href="">Пользователи</a></li>
+            </ul>
+            <hr>
+        </section>
+        <section>
+            <h3>Спецпроекты</h3>
+            <ul>
+                <li><a href="">Соберите свой стартап</a></li>
+                <li><a href="">Linux в Azure</a></li>
+                <li><a href="">Создай игру</a></li>
+            </ul>
+        </section>
     </aside>
 </header>
-<!------------------------------------------------------->
+
 <main>
 
-    Основной центральный блок
 
     <section>
         <figure>
-            Аватарка
+            <img src="" alt="">
         </figure>
         <a href="">@rayproud</a>
-        <meter value=""></meter>
-        <meter value=""></meter>
-        <p><span>Пользователь</span> <span>карма</span><span>рейтинг</span></p>
+        <meter value="2,0"></meter>
+        <meter value="0,0"></meter>
+        <p><span>Пользователь</span><span>карма</span><span>рейтинг</span></p>
 
         <p>
             <a href=""><span>Иконка</span>Профиль</a>
@@ -71,11 +70,12 @@
         </p>
     </section>
 
-    <time datetime="2014-12-03">3 декабря 2014 в 16:57</time>
+
+    <time datetime="2014-12-03T:16:57:00">3 декабря 2014 в 16:57</time>
 
 
     <article>
-            <h1><a href="">Разработка</a> Десять типичных вопросов на собеседованиях на знание HTML</h1>
+        <h1><a href="">Разработка</a> Десять типичных вопросов на собеседованиях на знание HTML</h1>
         <ul>
             <li><a href="">HTML</a></li>
             <li><a href="">Семантика</a></li>
@@ -154,7 +154,7 @@
         <article>
             <figure>Аватарка</figure>
             <span>Никнейм</span>
-            <time datetime="2014-12-08">3 декабря 2014 в 12:01</time>
+            <time datetime="2014-12-08T12:01:00">3 декабря 2014 в 12:01</time>
             <ul>
                 <li><a href="">Ссылка на комментарий</a></li>
                 <li><a href="">Показать ветку комментариев</a></li>
@@ -173,6 +173,7 @@
 </main>
 
 <aside>Правый рекламный блок</aside>
+
 <aside>
     <h2>Хабы</h2>
     <hr>
@@ -187,8 +188,6 @@
     <a href="">Все хабы</a>
 </aside>
 <aside>Правый нижний рекламный блок</aside>
-<!------------------------------------------------------->
-
 
 <hr>
 <aside>
@@ -207,33 +206,37 @@
     Реклама помогает поддерживать и развивать наши сервисы
 </aside>
 
-<!------------------------------------------------------->
 <footer>
     <section>
         <ul>
             <li><a href="">Войти</a>
             <li><a href="">Регистрация</a>
         </ul>
-
-        <p>Разделы</p>
+    </section>
+    <section>
+        <h4>Разделы</h4>
         <ul>
             <li><a href="">Войти</a>
             <li><a href="">Регистрация</a>
         </ul>
-
-        <p>Инфо</p>
+    </section>
+    <section>
+        <h4>Инфо</h4>
         <ul>
             <li><a href="">О сайте</a>
             <li><a href="">Правила</a>
         </ul>
-
-        <p>Услуги</p>
+    </section>
+    <section>
+        <h4>Услуги</h4>
         <ul>
             <li><a href="">Реклама</a>
             <li><a href="">Спецпроекты</a>
         </ul>
+    </section>
 
-        <p>Разное</p>
+    <section>
+        <h4>Разное</h4>
         <ul>
             <li><a href="">Приложения</a>
             <li><a href="">Тест-драйв</a>
@@ -247,7 +250,6 @@
         <a href="">Твиттер</a>
         <a href="">Фейсбук</a>
         <a href="">ВК</a>
-
     </section>
 </footer>
 <!--https://habrahabr.ru/post/244929/-->
