@@ -85,7 +85,7 @@
 
         <label class="file-upload-btn">
             <i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload new file
-            <input type="file" hidden>
+            <input name="doc" type="file" hidden>
         </label>
 
         <table>
@@ -96,17 +96,17 @@
                 <th>remove</th>
             </tr>
             <tr>
-                <td><i class="fa fa-file-text" aria-hidden="true"></i> business_operations.docx</td>
-                <td>72 KB</td>
-                <td>842</td>
+                <td><i class="fa fa-file-text" aria-hidden="true"></i><output name="doc-file-name"> business_operations.docx</output></td>
+                <td><output name="doc-size">72 KB</output></td>
+                <td><output name="doc-length">842</output></td>
                 <td>
                     <button class="delete-btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </td>
             </tr>
             <tr>
-                <td><i class="fa fa-file-text" aria-hidden="true"></i> business_financial.docx</td>
-                <td>26 KB</td>
-                <td>2,326</td>
+                <td><i class="fa fa-file-text" aria-hidden="true"></i><output name="doc-file-name"> business_financial.docx</output></td>
+                <td><output name="doc-size">26 KB</output></td>
+                <td><output name="doc-length">2,326</output></td>
                 <td>
                     <button class="delete-btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </td>
@@ -178,7 +178,7 @@
 
         <p class="under-range">YESTERDAY</p>
 
-        <section class="timeline-info">
+        <div class="timeline-info">
             <h3><i class="fa fa-info-circle" aria-hidden="true"></i> TIMELINE INFO</h3>
 
             <small>
@@ -187,7 +187,7 @@
                     perfecting
                     your translation.</p>
             </small>
-        </section>
+        </div>
     </section>
 
 

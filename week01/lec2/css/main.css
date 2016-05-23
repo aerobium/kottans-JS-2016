@@ -214,6 +214,7 @@ text-align: center;
 }
 
 .urgent .timeline-info {
+    clear: both;
     width: 100%;
     border: 1px solid #6e768f;
     padding: 15px;
