@@ -25,10 +25,18 @@
                     <th>DELIVERY</th>
                 </tr>
                 <tr>
-                    <td>2 documents</td>
-                    <td>2 languages</td>
-                    <td>$ 696.06</td>
-                    <td>48 hours</td>
+                    <td>
+                        <output name="doc-name">2 documents</output>
+                    </td>
+                    <td>
+                        <output name="doc-lang">2 languages</output>
+                    </td>
+                    <td>
+                        <output name="doc-price">$ 696.06</output>
+                    </td>
+                    <td>
+                        <output name="doc-hours">48 hours</output>
+                    </td>
                 </tr>
             </table>
 
@@ -136,54 +144,50 @@
             <button>+ ADD</button>
         </label>
 
+    </section>
 
+    <section class="desire-tone">
+        <span>3 </span>
+
+        <h2>Select your desire tone</h2>
+
+        <label class="select-desire">
+            <input type="radio" name="desire" value="friend"/>
+            <img src="img/desire-1.png">
+        </label>
+        <label class="select-desire">
+            <input type="radio" name="desire" value="corporate"/>
+            <img src="img/desire-1.png">
+        </label>
+        <label class="select-desire">
+            <input type="radio" name="desire" value="media"/>
+            <img src="img/desire-3.png">
+        </label>
     </section>
 
 
-    <section class="desired-urgent">
+    <section class="urgent">
+        <span>4 </span>
 
-        <section>
-            <span>3 </span>
+        <h2>Tell us how urgent this job is</h2>
+        <input type="range" step="25" min="0" max="50">
 
-            <h2>Select your desire tone</h2>
+        <p class="under-range">I GOT TIME</p>
 
-            <label class="select-desire">
-                <input type="radio" name="desire" value="friend"/>
-                <img src="img/desire-1.png">
-            </label>
-            <label class="select-desire">
-                <input type="radio" name="desire" value="corporate"/>
-                <img src="img/desire-1.png">
-            </label>
-            <label class="select-desire">
-                <input type="radio" name="desire" value="media"/>
-                <img src="img/desire-3.png">
-            </label>
-        </section>
+        <p class="under-range"><span class="vip">AVERAGE</span></p>
 
+        <p class="under-range">YESTERDAY</p>
 
-        <section class="urgent">
-            <span>4 </span>
+        <section class="timeline-info">
+            <h3><i class="fa fa-info-circle" aria-hidden="true"></i> TIMELINE INFO</h3>
 
-            <h2>Tell us how urgent this job is</h2>
-            <input type="range" step="25" min="0" max="50">
-
-            <p class="under-range">I GOT TIME</p>
-
-            <p class="under-range"><span class="vip">AVERAGE</span></p>
-
-            <p class="under-range">YESTERDAY</p>
-
-            <section class="timeline-info">
-                <h3><i class="fa fa-info-circle" aria-hidden="true"></i> TIMELINE INFO</h3>
-
+            <small>
                 <p>With an <span class="vip">Avarage</span> timeline set up, our expert translator can take a reasonable
                     amount of time
                     perfecting
                     your translation.</p>
-            </section>
+            </small>
         </section>
-
     </section>
 
 
@@ -192,26 +196,25 @@
 
         <h2>Sign up an choose a payment methods</h2>
 
-        <!--<p>Already have an account with us? <a href="#">Sign in</a></p>-->
+        <p>Already have an account with us? <a href="#">Sign in</a></p>
 
-        <fieldset>
-            <legend>Already have an account with us? <a href="#">Sign in</a></legend>
-        <label>
-            FULL NAME
-            <input type="text" name="name" required>
-        </label>
+        <!--<fieldset>-->
+            <!--<legend>Already have an account with us? <a href="#">Sign in</a></legend>-->
+            <label>
+                FULL NAME
+                <input type="text" name="name" required>
+            </label>
 
-        <label>
-            EMAIL ADRESS
-            <input type="email" name="email" required>
-        </label>
+            <label>
+                EMAIL ADRESS
+                <input type="email" name="email" required>
+            </label>
 
-        <label>
-            CHOOSE A PASSWORD
-            <input type="password" name="password" required>
-        </label>
-        </fieldset>
-
+            <label>
+                CHOOSE A PASSWORD
+                <input type="password" name="password" required>
+            </label>
+        <!--</fieldset>-->
 
 
         <section>
@@ -253,7 +256,7 @@
             <span>I agree to the </span><a href="#">Terms & conditions</a>
         </label>
         <button type="submit" class="submit-btn">place order</button>
-        <button  onclick="window.print()">print a quote</button>
+        <button onclick="window.print()">print a quote</button>
     </section>
 
 </form>
