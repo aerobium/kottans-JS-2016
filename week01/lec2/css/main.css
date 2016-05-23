@@ -33,20 +33,22 @@ h1 {
     border-left: 1px solid #6e768f;
 }
 
+.top-info address:first-of-type {
+    float: left;
+}
+
+.top-info address:last-of-type {
+    float: right;
+}
+
+/*.top-info address:nth-child(2) {*/
+    /*float: right;*/
+/*}*/
+
 address {
     font-style: normal;
     font-weight: 600;
 }
-
-#adress-right {
-    float: right;
-
-}
-
-#adress-left{
-    float: left;
-}
-
 
 
 .header-section button {
@@ -124,20 +126,24 @@ text-align: center;
     width: 100%;
 }
 
-#left-range {
+.under-range:first-of-type{
+    float:left;
+    width: 33.3%
+}
+
+.under-range:nth-last-of-type(2){
     float: left;
-    width: 100px;
+    width: 33.3%;
+    text-align: center;
 }
 
-#right-range {
-    float: right;
-    width: 100px;
+.under-range:last-of-type{
+    float:right;
+    width: 33.3%;
+    text-align: right;
 }
 
-#center-range {
-    margin: 0 auto;
-    width: 100px;
-}
+
 
 .what-you-want {
     text-align: center;
@@ -168,6 +174,11 @@ text-align: center;
     visibility: hidden;
     position: absolute;
 }
+
+.payment fieldset {
+    border: 0;
+}
+
 
 .select-payment > input + img {
     cursor: pointer;

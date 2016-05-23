@@ -11,10 +11,6 @@
 </head>
 <body>
 
-
-<!--------------------------------------------------------------------------------------------------------------->
-
-
 <form>
 
     <section class="header-section">
@@ -46,8 +42,8 @@
 
             <p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or
                 email.</p>
-            <address id="adress-left">+971 (0) 555 555</address>
-            <address id="adress-right">help@quest.com</address>
+            <address>+971 (0) 555 555</address>
+            <address>help@quest.com</address>
         </section>
 
         <hr>
@@ -71,7 +67,6 @@
         </label>
     </section>
 
-    <!--------------------------------------------------------------------------------------------------------------->
     <section class="upload-file-section">
         <span>1 </span>
 
@@ -80,14 +75,10 @@
 
         <br>
 
-
         <label class="file-upload-btn">
             <i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload new file
-
-
             <input type="file" hidden>
         </label>
-
 
         <table>
             <tr>
@@ -114,8 +105,6 @@
             </tr>
         </table>
     </section>
-
-    <!--------------------------------------------------------------------------------------------------------------->
 
     <section class="language">
         <span>2 </span>
@@ -152,7 +141,6 @@
 
 
     <section class="desired-urgent">
-        <!--------------------------------------------------------------------------------------------------------------->
 
         <section>
             <span>3 </span>
@@ -174,19 +162,17 @@
         </section>
 
 
-        <!--------------------------------------------------------------------------------------------------------------->
-
         <section class="urgent">
             <span>4 </span>
 
             <h2>Tell us how urgent this job is</h2>
             <input type="range" step="25" min="0" max="50">
 
-            <p id="left-range">I GOT TIME</p>
+            <p class="under-range">I GOT TIME</p>
 
-            <p id="center-range"><span class="vip">AVERAGE</span></p>
+            <p class="under-range"><span class="vip">AVERAGE</span></p>
 
-            <p id="right-range">YESTERDAY</p>
+            <p class="under-range">YESTERDAY</p>
 
             <section class="timeline-info">
                 <h3><i class="fa fa-info-circle" aria-hidden="true"></i> TIMELINE INFO</h3>
@@ -198,8 +184,6 @@
             </section>
         </section>
 
-
-        <!--------------------------------------------------------------------------------------------------------------->
     </section>
 
 
@@ -208,9 +192,10 @@
 
         <h2>Sign up an choose a payment methods</h2>
 
-        <p>Already have an account with us? <a href="#">Sign in</a></p>
+        <!--<p>Already have an account with us? <a href="#">Sign in</a></p>-->
 
-
+        <fieldset>
+            <legend>Already have an account with us? <a href="#">Sign in</a></legend>
         <label>
             FULL NAME
             <input type="text" name="name" required>
@@ -225,6 +210,9 @@
             CHOOSE A PASSWORD
             <input type="password" name="password" required>
         </label>
+        </fieldset>
+
+
 
         <section>
             <label class="select-payment">
@@ -257,9 +245,7 @@
             <input class="cc-cvc" name="ccvc" type="text" required>
         </label>
 
-
     </section>
-
 
     <section class="bottom-submit-section">
         <label>
@@ -274,7 +260,6 @@
 
 <script src="js/jquery-1.12.4.js"></script>
 <script src="js/jquery.payment.js"></script>
-
 
 <script>
     $('.cc-num').payment('formatCardNumber');
