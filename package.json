@@ -1,0 +1,26 @@
+{
+  "name": "kottans",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-less": "^3.1.0",
+    "gulp-watch": "^4.3.6",
+    "gulp": "^3.9.1",
+    "less-plugin-autoprefix": "^1.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aerobium/kottans-JS-2016.git"
+  },
+  "author": "aerobium",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aerobium/kottans-JS-2016/issues"
+  },
+  "homepage": "https://github.com/aerobium/kottans-JS-2016#readme"
+}
