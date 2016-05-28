@@ -1,4 +1,15 @@
 /*Colors*/
+/**/
+.btn-border {
+  border: 1px solid #d7d9e0;
+  border-radius: 3px;
+}
+.btn-submit {
+  background: #5fcac6;
+  border: 1px solid #54aca9;
+  border-radius: 3px;
+  color: white;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -129,17 +140,17 @@ table {
 }
 /*after reset*/
 h1 {
-  font-size: 2em;
-  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 4px;
 }
 h2 {
-  font-size: 1.5em;
-}
-h3 {
   font-size: 1.3em;
 }
+h3 {
+  font-size: 1.0em;
+}
 h4 {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 h5 {
   font-size: 0.8em;
@@ -160,6 +171,7 @@ section {
 }
 .header-section {
   height: 200px;
+  position: relative;
 }
 .header-section h5 {
   display: inline-block;
@@ -196,9 +208,15 @@ section {
 .top-submit-section .submit-btn {
   margin-left: 397px;
   margin-bottom: 7px;
+  background: #5fcac6;
+  border: 1px solid #54aca9;
+  border-radius: 3px;
+  color: white;
 }
 .top-submit-section button:last-child {
   margin-left: 84px;
+  border: 1px solid #d7d9e0;
+  border-radius: 3px;
 }
 .top-submit-section:after {
   content: '';
@@ -206,15 +224,24 @@ section {
   display: table;
 }
 .top-info {
-  padding: 15px;
+  padding-left: 62px;
+  padding-top: 15px;
   width: 25%;
   display: inline-block;
   border-left: 1px solid #6e768f;
+  position: absolute;
+  line-height: 1.6;
+}
+.top-info h5 {
+  margin-bottom: 10px;
 }
 .top-info p {
   font-size: 0.8em;
+  width: 215px;
+  margin-bottom: 10px;
 }
 .top-info address {
+  font-size: 0.8em;
   font-style: normal;
   font-weight: 600;
 }
@@ -226,6 +253,9 @@ section {
 }
 .upload-file-section h2 {
   display: inline;
+}
+.upload-file-section small {
+  font-size: 0.7em;
 }
 .upload-file-section table {
   border: 1px solid #d7d9e0;
@@ -309,9 +339,19 @@ section {
 }
 .what-you-want {
   text-align: center;
+  padding-bottom: 100px;
+}
+.what-you-want h1 {
+  text-transform: uppercase;
+  margin-top: 35px;
 }
 .what-you-want hr {
   width: 400px;
+  margin-bottom: 70px;
+}
+.select-translate:nth-last-of-type(2) {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .select-translate > input {
   visibility: hidden;
@@ -399,14 +439,15 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .bottom-submit-section button {
   width: 150px;
   height: 50px;
-  border: 1px solid #d7d9e0;
-  border-radius: 3px;
   text-transform: uppercase;
   font-size: 14px;
+  border: 1px solid #d7d9e0;
+  border-radius: 3px;
 }
 .submit-btn {
   background: #5fcac6;
   border: 1px solid #54aca9;
+  border-radius: 3px;
   color: white;
 }
 .vip {
