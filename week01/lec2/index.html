@@ -15,36 +15,42 @@
 
     <section class="header-section">
         <section class="top-submit-section">
-            <h5><i class="fa fa-file" aria-hidden="true"></i> YOUR ORDER</h5>
-
-            <button type="submit" class="submit-btn">place order</button>
-
-            <table>
-                <tr>
-                    <th>ITEMS</th>
-                    <th>DETAILS</th>
-                    <th>PRICE</th>
-                    <th>DELIVERY</th>
-                </tr>
-                <tr>
-                    <td>
-                        <output name="doc-name">2 documents</output>
-                    </td>
-                    <td>
-                        <output name="doc-lang">2 languages</output>
-                    </td>
-                    <td>
-                        <output name="doc-price">$ 696.06</output>
-                    </td>
-                    <td>
-                        <output name="doc-hours">48 hours</output>
-                    </td>
-                </tr>
-            </table>
 
 
+            <div class="top-table-group">
+                <h5><i class="fa fa-file" aria-hidden="true"></i> YOUR ORDER</h5>
 
-            <button onclick="window.print()">print a quote</button>
+                <table>
+                    <tr>
+                        <th>ITEMS</th>
+                        <th>DETAILS</th>
+                        <th>PRICE</th>
+                        <th>DELIVERY</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <output name="doc-name">2 documents</output>
+                        </td>
+                        <td>
+                            <output name="doc-lang">2 languages</output>
+                        </td>
+                        <td>
+                            <output name="doc-price">$ 696.06</output>
+                        </td>
+                        <td>
+                            <output name="doc-hours">48 hours</output>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="top-btn-group">
+                <button type="submit" class="submit-btn">place order</button>
+                <button onclick="window.print()">print a quote</button>
+            </div>
+
+
         </section>
 
         <section class="top-info">
@@ -56,209 +62,232 @@
             <address>help@quest.com</address>
         </section>
 
-        <hr>
     </section>
 
-    <section class="what-you-want">
-        <h1>select what you want to translate</h1>
-        <hr>
+    <main>
 
-        <label class="select-translate">
-            <input type="radio" name="variant" value="web"/>
-            <img src="img/website.png">
-        </label>
-        <label class="select-translate">
-            <input type="radio" name="variant" value="doc"/>
-            <img src="img/documents.png">
-        </label>
-        <label class="select-translate">
-            <input type="radio" name="variant" value="soc"/>
-            <img src="img/social-accounts.png">
-        </label>
+        <section class="what-you-want">
+            <h1>select what you want to translate</h1>
+            <hr>
 
-    </section>
+            <label class="select-translate">
+                <input type="radio" name="variant" value="web"/>
+                <img src="img/website.png">
+            </label>
+            <label class="select-translate">
+                <input type="radio" name="variant" value="doc"/>
+                <img src="img/documents.png">
+            </label>
+            <label class="select-translate">
+                <input type="radio" name="variant" value="soc"/>
+                <img src="img/social-accounts.png">
+            </label>
 
-    <section class="upload-file-section">
-        <span>1 </span>
+        </section>
 
-        <h2>Upload your documents</h2>
-        <small>(Doc, Docx, Text, PDF, Markdown)</small>
+        <section class="upload-file-section">
 
-        <br>
+            <h2><span>1 </span>Upload your documents</h2>
+            <small>(Doc, Docx, Text, PDF, Markdown)</small>
 
-        <label class="file-upload-btn">
-            <i class="fa fa-cloud-upload" aria-hidden="true"></i>
-            <span>Upload new file</span>
-            <input name="doc" type="file" hidden>
-        </label>
+            <br>
 
-        <table>
-            <tr>
-                <th>file name</th>
-                <th>file size</th>
-                <th>number of words</th>
-                <th>remove</th>
-            </tr>
-            <tr>
-                <td><i class="fa fa-file-text" aria-hidden="true"></i><output name="doc-file-name"> business_operations.docx</output></td>
-                <td><output name="doc-size">72 KB</output></td>
-                <td><output name="doc-length">842</output></td>
-                <td>
-                    <button class="delete-btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa fa-file-text" aria-hidden="true"></i><output name="doc-file-name"> business_financial.docx</output></td>
-                <td><output name="doc-size">26 KB</output></td>
-                <td><output name="doc-length">2,326</output></td>
-                <td>
-                    <button class="delete-btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                </td>
-            </tr>
-        </table>
-    </section>
+            <label class="file-upload-btn">
+                <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                <span>Upload new file</span>
+                <input name="doc" type="file" hidden>
+            </label>
 
-    <section class="language">
-        <span>2 </span>
+            <table>
+                <tr>
+                    <th>file name</th>
+                    <th>file size</th>
+                    <th>number of words</th>
+                    <th>remove</th>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-file-text" aria-hidden="true"></i>
+                        <output name="doc-file-name"> business_operations.docx</output>
+                    </td>
+                    <td>
+                        <output name="doc-size">72 KB</output>
+                    </td>
+                    <td>
+                        <output name="doc-length">842</output>
+                    </td>
+                    <td>
+                        <button class="delete-btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-file-text" aria-hidden="true"></i>
+                        <output name="doc-file-name"> business_financial.docx</output>
+                    </td>
+                    <td>
+                        <output name="doc-size">26 KB</output>
+                    </td>
+                    <td>
+                        <output name="doc-length">2,326</output>
+                    </td>
+                    <td>
+                        <button class="delete-btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                    </td>
+                </tr>
+            </table>
+        </section>
 
-        <h2>Choose your language pairings</h2>
+        <section class="language">
+            <h2><span>2 </span> Choose your language pairings</h2>
 
-        <label>
-            FROM
-            <select>
-                <option>English</option>
-                <option>Ukrainian</option>
-                <option>French</option>
-            </select>
-        </label>
-        <br>
-        <label>
-            TO
-            <select>
-                <option>English</option>
-                <option>Ukrainian</option>
-                <option>French</option>
-            </select>
-            <select>
-                <option>English</option>
-                <option>Ukrainian</option>
-                <option>French</option>
-            </select>
-            <i class="fa fa-trash" aria-hidden="true"></i>
-            <button>+ ADD</button>
-        </label>
+<p>FROM</p>
 
-    </section>
-
-    <section class="desire-tone">
-        <span>3 </span>
-
-        <h2>Select your desire tone</h2>
-
-        <label class="select-desire">
-            <input type="radio" name="desire" value="friend"/>
-            <img src="img/desire-1.png">
-        </label>
-        <label class="select-desire">
-            <input type="radio" name="desire" value="corporate"/>
-            <img src="img/desire-1.png">
-        </label>
-        <label class="select-desire">
-            <input type="radio" name="desire" value="media"/>
-            <img src="img/desire-3.png">
-        </label>
-    </section>
+                <select>
+                    <option>English</option>
+                    <option>Ukrainian</option>
+                    <option>French</option>
+                </select>
+<br>
 
 
-    <section class="urgent">
-        <span>4 </span>
 
-        <h2>Tell us how urgent this job is</h2>
-        <input type="range" step="25" min="0" max="50">
+<p>TO</p>
 
-        <p class="under-range">I GOT TIME</p>
-
-        <p class="under-range"><span class="vip">AVERAGE</span></p>
-
-        <p class="under-range">YESTERDAY</p>
-
-        <div class="timeline-info">
-            <h3><i class="fa fa-info-circle" aria-hidden="true"></i> TIMELINE INFO</h3>
-
-            <small>
-                <p>With an <span class="vip">Avarage</span> timeline set up, our expert translator can take a reasonable
-                    amount of time
-                    perfecting
-                    your translation.</p>
-            </small>
-        </div>
-    </section>
+                <select>
+                    <option>English</option>
+                    <option>Ukrainian</option>
+                    <option>French</option>
+                </select>
+                <select>
+                    <option>English</option>
+                    <option>Ukrainian</option>
+                    <option>French</option>
+                </select>
+                <i class="fa fa-trash" aria-hidden="true"></i>
+                <button>+ ADD</button>
+        </section>
 
 
-    <section class="payment">
-        <span>5 </span>
 
-        <h2>Sign up an choose a payment methods</h2>
 
-        <p>Already have an account with us? <a href="#">Sign in</a></p>
+        <section class="tone-urgent-wrapper">
+            <section class="desire-tone">
 
-             <label>
+                <h2><span>3 </span>Select your desire tone</h2>
+
+                <label class="select-desire">
+                    <input type="radio" name="desire" value="friend"/>
+                    <img src="img/desire-1.png">
+                </label>
+                <label class="select-desire">
+                    <input type="radio" name="desire" value="corporate"/>
+                    <img src="img/desire-1.png">
+                </label>
+                <label class="select-desire">
+                    <input type="radio" name="desire" value="media"/>
+                    <img src="img/desire-3.png">
+                </label>
+            </section>
+
+
+            <section class="urgent">
+
+
+                <h2><span>4 </span>Tell us how urgent this job is</h2>
+                <input type="range" step="25" min="0" max="50">
+
+                <p class="under-range">I GOT TIME</p>
+
+                <p class="under-range"><span class="vip">AVERAGE</span></p>
+
+                <p class="under-range">YESTERDAY</p>
+
+                <div class="timeline-info">
+                    <h3><i class="fa fa-info-circle" aria-hidden="true"></i> TIMELINE INFO</h3>
+
+                    <small>
+                        <p>With an <span class="vip">Avarage</span> timeline set up, our expert translator can take a
+                            reasonable
+                            amount of time
+                            perfecting
+                            your translation.</p>
+                    </small>
+                </div>
+            </section>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="payment">
+
+
+            <h2><span>5 </span>Sign up an choose a payment methods</h2>
+
+            <p>Already have an account with us? <a href="#">Sign in</a></p>
+
+            <label class="account-info-input">
                 FULL NAME
                 <input type="text" name="name" required>
             </label>
 
-            <label>
+            <label class="account-info-input">
                 EMAIL ADRESS
                 <input type="email" name="email" required>
             </label>
 
-            <label>
+            <label class="account-info-input">
                 CHOOSE A PASSWORD
                 <input type="password" name="password" required>
             </label>
 
 
-        <section>
-            <label class="select-payment">
-                <input type="radio" name="payment" value="visa" required/>
-                <img src="img/payment-1.png">
+            <section>
+                <label class="select-payment">
+                    <input type="radio" name="payment" value="visa" required/>
+                    <img src="img/payment-1.png">
+                </label>
+                <label class="select-payment">
+                    <input type="radio" name="payment" value="paypal"/>
+                    <img src="img/payment-2.png">
+                </label>
+                <label class="select-payment">
+                    <input type="radio" name="payment" value="amazon"/>
+                    <img src="img/payment-3.png">
+                </label>
+            </section>
+
+
+            <label>
+                CARD NUMBER
+                <input class="cc-num" name="cnum" type="text" required>
             </label>
-            <label class="select-payment">
-                <input type="radio" name="payment" value="paypal"/>
-                <img src="img/payment-2.png">
+
+            <label>
+                EXPIRY DATE
+                <input class="cc-exp" name="cdate" type="text" required>
             </label>
-            <label class="select-payment">
-                <input type="radio" name="payment" value="amazon"/>
-                <img src="img/payment-3.png">
+
+            <label>
+                CODE
+                <input class="cc-cvc" name="ccvc" type="text" required>
             </label>
+
         </section>
 
-
-        <label>
-            CARD NUMBER
-            <input class="cc-num" name="cnum" type="text" required>
-        </label>
-
-        <label>
-            EXPIRY DATE
-            <input class="cc-exp" name="cdate" type="text" required>
-        </label>
-
-        <label>
-            CODE
-            <input class="cc-cvc" name="ccvc" type="text" required>
-        </label>
-
-    </section>
-
-    <section class="bottom-submit-section">
-        <label>
-            <input type="checkbox" required>
-            <span>I agree to the </span><a href="#">Terms &amp; conditions</a>
-        </label>
-        <button type="submit" class="submit-btn">place order</button>
-        <button onclick="window.print()">print a quote</button>
-    </section>
+        <section class="bottom-submit-section">
+            <label>
+                <input type="checkbox" required>
+                <span>I agree to the </span><a href="#">Terms &amp; conditions</a>
+            </label>
+            <button type="submit" class="submit-btn">place order</button>
+            <button onclick="window.print()">print a quote</button>
+        </section>
+    </main>
 
 </form>
 

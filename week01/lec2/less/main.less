@@ -1,23 +1,19 @@
 /*Colors*/
 @background-btn-gray: #f7f7fa;
 
-
 /**/
 
-.btn-border{
+.btn-border {
   border: 1px solid #d7d9e0;
   border-radius: 3px;
 }
 
-.btn-submit
-{
+.btn-submit {
   background: #5fcac6;
   border: 1px solid #54aca9;
   border-radius: 3px;
   color: white;
 }
-
-
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -110,18 +106,66 @@ body {
   margin-right: auto;
 }
 
-
-section {
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid #76a7e1;
+
+  section {
+    width: 810px;
+  }
 }
 
+section {
+  //border: 1px solid #76a7e1;
+}
+
+/*----------------------------------------------------------------Header*/
 .header-section {
-  height: 200px;
-  position: relative;
+  height: 145px;
+  display: flex;
 
   h5 {
     display: inline-block;
     font-weight: bolder;
+  }
+}
+
+/*-------------------------------------------------------------
+
+Top submit section*/
+
+.top-submit-section {
+  width: 65%;
+  display: flex;
+  padding: 20px;
+
+  .top-table-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  table {
+    //float: left;
+    text-align: left;
+  }
+
+  th {
+    font-size: 0.8em;
+    font-weight: bold;
+    height: 20px;
+    width: 100px;
+  }
+
+  td {
+    width: 100px;
+    font-size: 0.8em;
+  }
+
+  .top-btn-group {
+    display: flex;
+    flex-direction: column;
   }
 
   button {
@@ -131,41 +175,11 @@ section {
     text-transform: uppercase;
     font-size: 14px;
   }
-
-  table {
-    float: left;
-  }
-}
-
-.top-submit-section {
-  width: 65%;
-  display: inline-block;
-  padding: 20px;
-
-  table{
-    text-align: left;
-  }
-
-  th{
-    font-size: 0.8em;
-    font-weight: bold;
-    height: 20px;
-    width: 100px;
-  }
-
-  td{
-    width: 100px;
-    font-size: 0.8em;
-  }
-
   .submit-btn {
-    margin-left: 397px;
-    margin-bottom: 7px;
     .btn-submit;
   }
 
   button:last-child {
-    margin-left: 84px;
     .btn-border;
   }
 
@@ -176,20 +190,22 @@ section {
   }
 }
 
+/*-------------------------------------------------------------------------------Top info*/
+
 .top-info {
   padding-left: 62px;
   padding-top: 15px;
-  width: 25%;
+  width: 17%;
   display: inline-block;
   border-left: 1px solid #6e768f;
   position: absolute;
   line-height: 1.6;
 
-  h5{
+  h5 {
     margin-bottom: 10px;
   }
 
-  p{
+  p {
     font-size: 0.8em;
     width: 215px;
     margin-bottom: 10px;
@@ -212,16 +228,19 @@ section {
 .upload-file-section {
 
   h2 {
-    display: inline;
+    margin-top: 22px;
+    display: inline-block;
   }
 
-  small{
+  small {
     font-size: 0.7em;
   }
 
   table {
     border: 1px solid #d7d9e0;
-    width: 100%;
+    width: 90%;
+    margin: auto;
+    height: 110px;
 
     .fa-trash {
       margin-left: 14px;
@@ -238,14 +257,21 @@ section {
 }
 
 .file-upload-btn {
-  display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 55px;
+  margin-bottom: 60px;
   border: 1px solid #d7d9e0;
   background: @background-btn-gray;
   border-radius: 3px;
-  width: 150px;
-  height: 50px;
+  width: 205px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    margin-right: 20px;
+  }
 }
 
 .delete-btn {
@@ -254,19 +280,34 @@ section {
 }
 
 .language {
+  padding-top: 107px;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  p {
+    width: 50px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 20px;
+  }
+
   select {
+    &:nth-of-type(1) {
+      margin-bottom: 33px;
+    }
+
     text-align: center;
     text-align-last: center; /*work only with chrome*/
     background: @background-btn-gray;
-    width: 150px;
+    width: 180px;
     height: 50px;
     font-size: 14px;
     color: #6e768f;
 
     .btn-border;
   }
-
-
 
   button {
     height: 50px;
@@ -276,26 +317,54 @@ section {
   }
 }
 
-.desire-tone, .urgent, .urgent section {
-  width: 45%;
-  display: inline-block;
+.tone-urgent-wrapper {
+  display: flex;
+}
+
+.desire-tone {
+  padding-top: 89px;
+  width: 688px;
+
+  h2 {
+    margin-bottom: 45px;
+  }
+
 }
 
 .urgent {
+  padding-top: 89px;
+
+  h2 {
+    margin-bottom: 73px;
+  }
+
   p {
     display: inline-block;
   }
 
   input {
+    margin: auto auto 15px;
     display: block;
-    width: 100%;
+    width: 80%;
   }
 
   .timeline-info {
+    margin-top: 80px;
+    padding-top: 27px;
+    padding-left: 60px;
+    padding-bottom: 25px;
     clear: both;
-    width: 100%;
     border: 1px solid #6e768f;
-    padding: 15px;
+
+    h3 {
+      margin-bottom: 16px;
+    }
+
+    small {
+      font-size: 0.8em;
+      line-height: 1.6;
+    }
+
   }
 }
 
@@ -318,21 +387,20 @@ section {
 
 .what-you-want {
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 
-  h1{
+  h1 {
     text-transform: uppercase;
-    margin-top: 35px;
+    margin-top: 94px;
   }
 
-  hr{
+  hr {
     width: 400px;
     margin-bottom: 70px;
   }
 }
 
-
-.select-translate:nth-last-of-type(2){
+.select-translate:nth-last-of-type(2) {
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -345,14 +413,52 @@ section {
 .select-translate > input + img {
   /* IMAGE STYLES */
   cursor: pointer;
-  border: 2px solid transparent;
-  width: 25%;
-  height: 25%;
+  width: 30%;
 }
 
 .select-translate > input:checked + img {
-  border: 5px solid #76a7e1;
+  border: 1px solid #76a7e1;
+  outline: 4px solid #FF0000;
 }
+
+.payment {
+
+  h2 {
+    margin-top: 67px;
+    margin-bottom: 55px;
+  }
+
+  p {
+    margin-bottom: 45px;
+  }
+
+  label > input {
+    margin-bottom: 30px;
+    margin-top: 8px;
+    width: 270px;
+    display: block;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    height: 38px;
+  }
+
+  .account-info-input{
+    &:nth-of-type(2){
+      display: inline-block;
+      margin-right: 25px;
+    }
+
+    &:nth-of-type(3){
+      display: inline-block;
+    }
+    }
+
+}
+
+
+
+
+
 
 .select-payment > input {
   visibility: hidden;
@@ -365,7 +471,6 @@ section {
 
 .select-payment > input + img {
   cursor: pointer;
-  border: 2px solid transparent;
   width: 20%;
   height: 20%;
 }
@@ -374,8 +479,15 @@ section {
   border: 5px solid #5472ff;
 }
 
+
+
+
+
+
 .select-desire {
   display: block;
+  margin-bottom: 17px;
+
 }
 
 .select-desire > input {
@@ -386,9 +498,7 @@ section {
 .select-desire > input + img {
   /* IMAGE STYLES */
   cursor: pointer;
-  border: 2px solid transparent;
-  width: 50%;
-  height: 50%;
+  width: 58%;
 }
 
 .select-desire > input:checked + img {
@@ -427,17 +537,12 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   background: #ccc;
 }
 
-.payment label > input {
-  display: block;
-  border: solid 1px #ccc;
-  border-radius: 3px;
-  height: 30px;
-}
+
 
 .bottom-submit-section {
   float: right;
 
-  button{
+  button {
     width: 150px;
     height: 50px;
     text-transform: uppercase;
