@@ -139,6 +139,14 @@ table {
   border-spacing: 0;
 }
 /*after reset*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #6e768f;
+}
 h1 {
   font-size: 1.2em;
   letter-spacing: 4px;
@@ -159,7 +167,6 @@ h6 {
   font-size: 0.7em;
 }
 body {
-  color: #6e768f;
   font-family: 'Open Sans', serif;
   font-size: 14px;
   max-width: 980px;
@@ -196,6 +203,7 @@ Top submit section*/
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
+  border-right: 1px solid #6e768f;
 }
 .top-submit-section .top-table-group {
   display: -ms-flexbox;
@@ -211,10 +219,12 @@ Top submit section*/
   font-weight: bold;
   height: 20px;
   width: 100px;
+  color: #6e768f;
 }
 .top-submit-section td {
   width: 100px;
   font-size: 0.8em;
+  color: #a5abc5;
 }
 .top-submit-section .top-btn-group {
   display: -ms-flexbox;
@@ -238,6 +248,8 @@ Top submit section*/
 .top-submit-section button:last-child {
   border: 1px solid #d7d9e0;
   border-radius: 3px;
+  background-color: #f7f7fa;
+  color: #6e768f;
 }
 .top-submit-section:after {
   content: '';
@@ -250,7 +262,6 @@ Top submit section*/
   padding-top: 15px;
   width: 17%;
   display: inline-block;
-  border-left: 1px solid #6e768f;
   position: absolute;
   line-height: 1.6;
 }
@@ -261,11 +272,13 @@ Top submit section*/
   font-size: 0.8em;
   width: 215px;
   margin-bottom: 10px;
+  color: #a5abc5;
 }
 .top-info address {
   font-size: 0.8em;
   font-style: normal;
   font-weight: 600;
+  color: #6e768f;
 }
 .top-info address:first-of-type {
   float: left;
@@ -279,18 +292,35 @@ Top submit section*/
 }
 .upload-file-section small {
   font-size: 0.7em;
+  color: #a5abc5;
 }
 .upload-file-section table {
   border: 1px solid #d7d9e0;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  height: 110px;
+  height: 143px;
+  color: #a5abc5;
 }
 .upload-file-section table .fa-trash {
   margin-left: 14px;
+  color: #a5abc5;
 }
 .upload-file-section table i:not(.fa-trash) {
   margin-right: 10px;
+}
+.upload-file-section table th {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bolder;
+}
+.upload-file-section table tr:nth-child(2) > td:first-child {
+  width: 297px;
+}
+.upload-file-section table tr:nth-child(2) > td:nth-child(2) {
+  width: 165px;
+}
+.upload-file-section table tr:nth-child(2) > td:nth-child(3) {
+  width: 210px;
 }
 .upload-file-section table td,
 .upload-file-section table th {
@@ -298,7 +328,7 @@ Top submit section*/
 }
 .file-upload-btn {
   margin-top: 55px;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   border: 1px solid #d7d9e0;
   background: #f7f7fa;
   border-radius: 3px;
@@ -312,6 +342,7 @@ Top submit section*/
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+  color: #a5abc5;
 }
 .file-upload-btn i {
   margin-right: 20px;
@@ -321,16 +352,19 @@ Top submit section*/
   border: none;
 }
 .language {
-  padding-top: 107px;
+  padding-top: 100px;
 }
 .language h2 {
   margin-bottom: 50px;
 }
 .language p {
-  width: 50px;
+  font-size: 0.8em;
+  width: 40px;
   text-align: right;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 15px;
+  color: #a5abc5;
+  font-weight: bolder;
 }
 .language select {
   text-align: center;
@@ -348,11 +382,23 @@ Top submit section*/
 .language select:nth-of-type(1) {
   margin-bottom: 33px;
 }
+.language select:nth-of-type(2) {
+  margin-right: 15px;
+}
+.language select:nth-of-type(3) {
+  margin-right: 12px;
+}
+.language i {
+  margin-right: 12px;
+  color: #a5abc5;
+}
 .language button {
+  width: 107px;
   height: 50px;
   background: #f7f7fa;
-  border: 1px solid #d7d9e0;
   color: #6e768f;
+  border: 1px solid #d7d9e0;
+  border-radius: 3px;
 }
 .tone-urgent-wrapper {
   display: -ms-flexbox;
@@ -373,6 +419,7 @@ Top submit section*/
 }
 .urgent p {
   display: inline-block;
+  color: #a5abc5;
 }
 .urgent input {
   margin: auto auto 15px;
@@ -385,7 +432,7 @@ Top submit section*/
   padding-left: 60px;
   padding-bottom: 25px;
   clear: both;
-  border: 1px solid #6e768f;
+  border: 1px solid #a5abc5;
 }
 .urgent .timeline-info h3 {
   margin-bottom: 16px;
@@ -434,8 +481,10 @@ Top submit section*/
   width: 30%;
 }
 .select-translate > input:checked + img {
-  border: 1px solid #76a7e1;
-  outline: 4px solid #FF0000;
+  box-shadow: 0px 0px 0px 4px #76a7e1;
+}
+.payment {
+  margin-bottom: 65px;
 }
 .payment h2 {
   margin-top: 67px;
@@ -443,6 +492,10 @@ Top submit section*/
 }
 .payment p {
   margin-bottom: 45px;
+  color: #a5abc5;
+}
+.payment a {
+  color: #a5abc5;
 }
 .payment label > input {
   margin-bottom: 30px;
@@ -453,12 +506,48 @@ Top submit section*/
   border-radius: 3px;
   height: 38px;
 }
+.payment label span {
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bolder;
+  color: #a5abc5;
+}
 .payment .account-info-input:nth-of-type(2) {
   display: inline-block;
   margin-right: 25px;
 }
 .payment .account-info-input:nth-of-type(3) {
   display: inline-block;
+}
+.payment section {
+  margin-top: 30px;
+  margin-bottom: 65px;
+}
+.payment .card-info {
+  display: inline-block;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+.payment label:nth-of-type(4) {
+  display: inline-block;
+}
+.payment label:nth-of-type(4) input {
+  width: 341px;
+  margin-right: 26px;
+}
+.payment label:nth-of-type(5) {
+  display: inline-block;
+}
+.payment label:nth-of-type(5) input {
+  width: 150px;
+  margin-right: 26px;
+}
+.payment label:nth-of-type(6) {
+  display: inline-block;
+}
+.payment label:nth-of-type(6) input {
+  width: 92px;
 }
 .select-payment > input {
   visibility: hidden;
@@ -468,12 +557,12 @@ Top submit section*/
 /*border: 0;*/
 /*}*/
 .select-payment > input + img {
+  margin-right: 21px;
   cursor: pointer;
-  width: 20%;
-  height: 20%;
+  width: 25%;
 }
 .select-payment > input:checked + img {
-  border: 5px solid #5472ff;
+  box-shadow: 0px 0px 0px 4px #76a7e1;
 }
 .select-desire {
   display: block;
@@ -518,16 +607,33 @@ input[type=range]:focus {
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #ccc;
 }
-.bottom-submit-section {
-  float: right;
+.bottom-submit-section label {
+  margin-left: 246px;
+  margin-right: 33px;
+}
+.bottom-submit-section label span {
+  margin-left: 10px;
+  font-size: 0.8em;
+  color: #a5abc5;
+}
+.bottom-submit-section label a {
+  font-size: 0.8em;
+  color: #a5abc5;
 }
 .bottom-submit-section button {
-  width: 150px;
+  width: 153px;
   height: 50px;
   text-transform: uppercase;
   font-size: 14px;
   border: 1px solid #d7d9e0;
   border-radius: 3px;
+}
+.bottom-submit-section button:nth-of-type(1) {
+  margin-right: 25px;
+}
+.bottom-submit-section button:nth-of-type(2) {
+  background-color: #f7f7fa;
+  color: #a5abc5;
 }
 .submit-btn {
   background: #5fcac6;
