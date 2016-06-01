@@ -129,6 +129,8 @@ section {
 .header-section {
   height: 145px;
   display: flex;
+  border-right: 1px solid #6e768f;
+  border-left: 1px solid #6e768f;
 
   h5 {
     display: inline-block;
@@ -149,10 +151,15 @@ Top submit section*/
   .top-table-group {
     display: flex;
     flex-direction: column;
+
+    h5{
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
   }
 
   table {
-    //float: left;
+    margin-left: 20px;
     text-align: left;
   }
 
@@ -165,7 +172,7 @@ Top submit section*/
   }
 
   td {
-    width: 100px;
+    width: 115px;
     font-size: 0.8em;
     color: @text-light-color;
   }
@@ -189,6 +196,7 @@ Top submit section*/
   button:last-child {
     .btn-border;
     background-color: #f7f7fa;
+    margin-top: 10px;
     color: @text-dark-color;
   }
 
@@ -227,10 +235,11 @@ Top submit section*/
     color: @text-dark-color;
 
     &:first-of-type {
-      float: left;
+display: inline-block;
+      margin-right: 20px;
     }
     &:last-of-type {
-      float: right;
+      display: inline-block;
     }
   }
 }
@@ -247,11 +256,16 @@ Top submit section*/
     color: @text-light-color;
   }
 
-  table {
+  label + div {
     border: 1px solid #d7d9e0;
-    width: 100%;
-    margin: auto;
     height: 143px;
+  }
+
+
+  table {
+    width: 100%;
+    height: 100%;
+    margin: 25px;
     color: @text-light-color;
 
     .fa-trash {
@@ -280,7 +294,6 @@ Top submit section*/
     tr:nth-child(2) > td:nth-child(3) {
       width: 210px;
     }
-
 
     td, th {
       text-align: left;
@@ -353,7 +366,7 @@ Top submit section*/
     .btn-border;
   }
 
-  i{
+  i {
     margin-right: 12px;
     color: @text-light-color;
   }
@@ -447,10 +460,25 @@ Top submit section*/
   }
 
   hr {
-    width: 400px;
+    width: 455px;
     margin-bottom: 70px;
   }
 }
+
+
+
+
+
+
+
+.select-translate {
+  display: inline-block;
+  position: relative;
+  width: 243px;
+  height: 174px;
+}
+
+
 
 .select-translate:nth-last-of-type(2) {
   margin-left: 25px;
@@ -462,14 +490,25 @@ Top submit section*/
   position: absolute;
 }
 
-.select-translate > input + img {
-  /* IMAGE STYLES */
+.select-translate div img {
+  display: none;
+  width: 30px;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+}
+
+.select-translate > img {
   cursor: pointer;
-  width: 30%;
+  width: 100%;
 }
 
 .select-translate > input:checked + img {
   box-shadow: 0px 0px 0px 4px #76a7e1;
+}
+
+.select-translate > input:checked + img + div img {
+  display: block;
 }
 
 .payment {
@@ -485,7 +524,7 @@ Top submit section*/
     color: @text-light-color;
   }
 
-  a{
+  a {
     color: @text-light-color;
   }
 
@@ -554,17 +593,12 @@ Top submit section*/
       }
     }
   }
-
 }
 
 .select-payment > input {
   visibility: hidden;
   position: absolute;
 }
-
-/*.payment fieldset {*/
-/*border: 0;*/
-/*}*/
 
 .select-payment > input + img {
   margin-right: 21px;
@@ -580,6 +614,27 @@ Top submit section*/
   display: block;
   margin-bottom: 17px;
 
+  border: 1px solid #d7d9e0;
+  background: @background-btn-gray;
+  border-radius: 3px;
+  width: 210px;
+  height: 62px;
+
+  div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: @text-light-color;
+
+    span {
+      margin-left: 20px;
+    }
+  }
+
 }
 
 .select-desire > input {
@@ -587,18 +642,24 @@ Top submit section*/
   position: absolute;
 }
 
-.select-desire > input + img {
-  /* IMAGE STYLES */
-  cursor: pointer;
-  width: 58%;
+.select-desire div img {
+  display: none;
+  width: 30px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
 }
 
-.select-desire > input:checked + img {
-  /* (RADIO CHECKED) IMAGE STYLES */
-  border: 5px solid #5472ff;
+
+.select-desire > input:checked + div {
+  box-shadow: 0px 0px 0px 4px #76a7e1;
+
+  img{
+    display: block;
+  }
+
 }
 
-/*Styles for input[type=range]*/
 input[type=range] {
   -webkit-appearance: none;
 }
