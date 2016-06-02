@@ -152,7 +152,12 @@ h1 {
   letter-spacing: 4px;
 }
 h2 {
+  position: relative;
   font-size: 1.3em;
+}
+h2 i {
+  position: absolute;
+  left: -50px;
 }
 h3 {
   font-size: 1.0em;
@@ -161,7 +166,12 @@ h4 {
   font-size: 0.9em;
 }
 h5 {
+  position: relative;
   font-size: 0.8em;
+}
+h5 i {
+  position: absolute;
+  left: -30px;
 }
 h6 {
   font-size: 0.7em;
@@ -173,6 +183,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+body form:invalid .submit-btn {
+  display: none;
+}
 main {
   display: -ms-flexbox;
   display: flex;
@@ -180,32 +193,28 @@ main {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  border: 1px solid #76a7e1;
+  border: 1px solid #a5abc5;
 }
 main section {
   width: 810px;
 }
-/*----------------------------------------------------------------Header*/
 .header-section {
   height: 145px;
   display: -ms-flexbox;
   display: flex;
-  border-right: 1px solid #6e768f;
-  border-left: 1px solid #6e768f;
+  border-right: 1px solid #a5abc5;
+  border-left: 1px solid #a5abc5;
 }
 .header-section h5 {
   display: inline-block;
   font-weight: bolder;
 }
-/*-------------------------------------------------------------
-
-Top submit section*/
 .top-submit-section {
   width: 65%;
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
-  border-right: 1px solid #6e768f;
+  border-right: 1px solid #a5abc5;
 }
 .top-submit-section .top-table-group {
   display: -ms-flexbox;
@@ -216,6 +225,7 @@ Top submit section*/
 .top-submit-section .top-table-group h5 {
   margin-top: 10px;
   margin-bottom: 30px;
+  margin-left: 20px;
 }
 .top-submit-section table {
   margin-left: 20px;
@@ -428,6 +438,7 @@ Top submit section*/
 }
 .urgent h2 {
   margin-bottom: 73px;
+  margin-left: 65px;
 }
 .urgent p {
   display: inline-block;
@@ -493,7 +504,7 @@ Top submit section*/
   visibility: hidden;
   position: absolute;
 }
-.select-translate div img {
+.select-translate img + img {
   display: none;
   width: 30px;
   position: absolute;
@@ -507,14 +518,14 @@ Top submit section*/
 .select-translate > input:checked + img {
   box-shadow: 0px 0px 0px 4px #76a7e1;
 }
-.select-translate > input:checked + img + div img {
+.select-translate > input:checked + img + img {
   display: block;
 }
 .payment {
   margin-bottom: 65px;
 }
 .payment h2 {
-  margin-top: 67px;
+  margin-top: 70px;
   margin-bottom: 55px;
 }
 .payment p {
@@ -533,12 +544,43 @@ Top submit section*/
   border-radius: 3px;
   height: 38px;
 }
+.payment .account-info-input > input + img {
+  position: absolute;
+  top: 30px;
+  width: 25px;
+  right: 5px;
+}
+.payment .account-info-input > input + img + img {
+  position: absolute;
+  top: 30px;
+  width: 25px;
+  right: 5px;
+}
+.payment .account-info-input > input:invalid + img {
+  display: none;
+}
+.payment .account-info-input > input:invalid + img + img {
+  display: block;
+}
+.payment .account-info-input > input:valid + img + img {
+  display: none;
+}
+.payment .account-info-input > input:valid + img {
+  display: block;
+}
 .payment label span {
   margin-left: 10px;
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: bolder;
   color: #a5abc5;
+}
+.payment .account-info-input {
+  width: 270px;
+  position: relative;
+}
+.payment .account-info-input:nth-of-type(1) {
+  display: block;
 }
 .payment .account-info-input:nth-of-type(2) {
   display: inline-block;
