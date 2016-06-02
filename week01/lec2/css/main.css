@@ -183,9 +183,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-body form:invalid .submit-btn {
-  display: none;
-}
 main {
   display: -ms-flexbox;
   display: flex;
