@@ -33,7 +33,7 @@
 
                 var to = Object(target);
 
-                //Go throw arguments starting from the second (from the source)
+                //Go through arguments starting from the second (from the source)
                 for (var index = 1; index < arguments.length;) {
                     var from = arguments[index++];
 
