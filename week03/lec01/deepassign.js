@@ -35,10 +35,8 @@
                 //Go throw arguments starting from the second (from the source)
                 for (var index = 1; index < arguments.length;) {
                     var from = arguments[index++];
-                    console.log("azza: " + JSON.stringify(from));
 
                     if (from !== Object(from)) {
-                        alert("ololo");
                         continue;
                     }
 
