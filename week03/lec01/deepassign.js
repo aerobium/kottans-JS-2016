@@ -13,7 +13,7 @@
 
                 if (from[key] instanceof Date || from[key] instanceof RegExp || from[key] instanceof Map || from[key] instanceof Set) {
                     to[key] = new from[key].constructor(from[key]);
-                }else{
+                } else {
                     recursiveReflect(to, from[key]);
                 }
             } else {
@@ -21,6 +21,7 @@
                     to[key] = from[key]
                 }
             }
+
         })
     }
 
