@@ -1,10 +1,6 @@
 "use strict";
 
-var express = require('express');
-var app = express();
-
 var config = require('./config');
-
 
 var myapp = require('./myapp.js');
 
@@ -19,4 +15,4 @@ var myLogger2 = function (req, res) {
 
 myapp.use(myLogger1, myLogger2);
 
-myapp.start(config.port, config.port, () => console.log("listening on" + config.port));
+myapp.start(config.port, config.host, () => console.log("listening on " + config.port));
